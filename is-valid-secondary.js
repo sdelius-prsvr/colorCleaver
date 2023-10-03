@@ -3,11 +3,15 @@
  ******************/
 
 function isValidSecondary(color){
-  switch(color.toLowerCase()){
-    case 'purple': return true
-    case 'orange': return true
-    case 'green': return true
-    default: return false
+  if(color !== undefined){
+    switch(color.toLowerCase()){
+      case 'purple': return true
+      case 'orange': return true
+      case 'green': return true
+      default: return false
+    }
+  }else{
+    return false
   }
 }
 

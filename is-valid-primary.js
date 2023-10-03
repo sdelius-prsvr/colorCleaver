@@ -4,11 +4,15 @@
 
 
 function isValidPrimary(color){
-  switch(color.toLowerCase()){
-    case 'blue': return true
-    case 'red': return true
-    case 'yellow': return true
-    default: return false
+  if(color !== undefined){
+    switch(color.toLowerCase()){
+      case 'blue': return true
+      case 'red': return true
+      case 'yellow': return true
+      default: return false
+    }
+  }else{
+    return false
   }
 }
 

@@ -4,9 +4,7 @@
 
 
 function colorCombinator(color1, color2){
-  if(color1 === color2){
-    return 'errorCombine'
-  }else if(color1.toLowerCase() === 'red'){
+  if(color1.toLowerCase() === 'red'){
     switch(color2.toLowerCase()){
       case 'blue':
         return 'purple'
